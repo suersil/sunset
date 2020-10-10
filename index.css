@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+html {
+  overflow: hidden;
+}
+body {
+  background: linear-gradient(180deg, darkblue, purple, red, orange) no-repeat;
+  height: 100vh;
+}
+
+div {
+  font-size: 50px;
+  font-family: "Dancing Script", cursive;
+  color: #eee;
+  text-align: center;
+  padding: 1.8em;
+}
+
+.sunbox {
+  position: absolute;
+  width: 100%;
+  bottom: -130px;
+  animation-name: gosunset;
+  animation-duration: 15s;
+ 
+}
+.sun {
+  box-shadow: 0px 0px 100px 1px rgb(255, 242, 128);
+  background-color: darkyellow;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  animation-name: shine;
+  animation-duration: 15s;
+}
+
+@keyframes shine {
+  0% {
+    background-color: yellow;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: orange;
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background-color: rgba(255, 81, 0, 0.904);
+    left: 180px;
+    top: 200px;
+  }
+  75% {
+    background-color: red
+    left: 0px;
+    top: 200px;
+  }
+
+
+  100% {
+    background-color: transparent;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+@keyframes gosunset {
+
+ 0% {
+   bottom: opx;
+  
+ } 
+
+100%{
+  top:350px;
+}}
